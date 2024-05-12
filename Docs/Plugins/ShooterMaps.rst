@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/GameFeatures/ShooterMaps/README.rst

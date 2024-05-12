@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/UIExtension/README.rst

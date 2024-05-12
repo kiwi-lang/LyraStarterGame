@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/GameFeatures/ShooterExplorer/README.rst

@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/LyraExtTool/README.rst

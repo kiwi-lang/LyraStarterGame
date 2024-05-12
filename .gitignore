@@ -1,0 +1,13 @@
+Build/
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+_build/
+.vs/
+.vscode/
+*.sln
+generated_api/
+
+
+Content/Effects/Textures/Flipbooks/SmokeSwirl_3_Flipbook_CHANNELPACK.uasset

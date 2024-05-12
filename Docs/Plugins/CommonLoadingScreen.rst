@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/CommonLoadingScreen/README.rst

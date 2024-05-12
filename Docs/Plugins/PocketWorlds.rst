@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/PocketWorlds/README.rst

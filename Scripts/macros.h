@@ -1,0 +1,11 @@
+#define UENUM(...)
+#define UFUNCTION(...)
+#define DECLARE_LOG_CATEGORY_EXTERN(...)
+#define IMPLEMENT_MODULE(...)
+#define UCLASS(...)
+
+#define DEFINE_LOG_CATEGORY_STATIC(...)
+#define UINTERFACE(...)
+
+#define COMMONLOADINGSCREEN_API
+#define GAMEPLAYMESSAGERUNTIME_API

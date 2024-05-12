@@ -1,0 +1,1 @@
+.. include:: ../../Plugins/GameFeatures/ShooterTests/README.rst

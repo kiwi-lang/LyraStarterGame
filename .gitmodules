@@ -1,0 +1,45 @@
+[submodule "Plugins/AsyncMixin"]
+	path = Plugins/AsyncMixin
+	url = git@github.com:kiwi-lang/AsyncMixin.git
+[submodule "Plugins/CommonUser"]
+	path = Plugins/CommonUser
+	url = git@github.com:kiwi-lang/CommonUser.git
+[submodule "Plugins/GameSettings"]
+	path = Plugins/GameSettings
+	url = git@github.com:kiwi-lang/GameSettings.git
+[submodule "Plugins/UIExtension"]
+	path = Plugins/UIExtension
+	url = git@github.com:kiwi-lang/UIExtension.git
+[submodule "Plugins/CommonGame"]
+	path = Plugins/CommonGame
+	url = git@github.com:kiwi-lang/CommonGame.git
+[submodule "Plugins/GameFeatures/ShooterCore"]
+	path = Plugins/GameFeatures/ShooterCore
+	url = git@github.com:kiwi-lang/ShooterCore.git
+[submodule "Plugins/GameFeatures/ShooterExplorer"]
+	path = Plugins/GameFeatures/ShooterExplorer
+	url = git@github.com:kiwi-lang/ShooterExplorer.git
+[submodule "Plugins/GameFeatures/ShooterMaps"]
+	path = Plugins/GameFeatures/ShooterMaps
+	url = git@github.com:kiwi-lang/ShooterMaps.git
+[submodule "Plugins/GameFeatures/ShooterTests"]
+	path = Plugins/GameFeatures/ShooterTests
+	url = git@github.com:kiwi-lang/ShooterTests.git
+[submodule "Plugins/GameFeatures/TopDownArena"]
+	path = Plugins/GameFeatures/TopDownArena
+	url = git@github.com:kiwi-lang/TopDownArena.git
+[submodule "Plugins/GameSubtitles"]
+	path = Plugins/GameSubtitles
+	url = git@github.com:kiwi-lang/GameSubtitles.git
+[submodule "Plugins/ModularGameplayActors"]
+	path = Plugins/ModularGameplayActors
+	url = git@github.com:kiwi-lang/ModularGameplayActors.git
+[submodule "Plugins/CommonLoadingScreen"]
+	path = Plugins/CommonLoadingScreen
+	url = git@github.com:kiwi-lang/CommonLoadingScreen.git
+[submodule "Plugins/GameplayMessageRouter"]
+	path = Plugins/GameplayMessageRouter
+	url = git@github.com:kiwi-lang/GameplayMessageRouter.git
+[submodule "Plugins/PocketWorlds"]
+	path = Plugins/PocketWorlds
+	url = git@github.com:kiwi-lang/PocketWorlds.git

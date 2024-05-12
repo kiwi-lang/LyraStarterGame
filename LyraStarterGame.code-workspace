@@ -1,0 +1,1259 @@
+{
+	"folders": [
+		{
+			"name": "LyraStarterGame",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "LyraClient Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraClient Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraClient Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraClient Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraClient Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraClient Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraClient Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraClient",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraEditor",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraGame Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraGame Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraGame Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraGame Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraGame Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraGame Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraGame",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraServer Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Debug",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraServer Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"DebugGame",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraServer Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Development",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraServer Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Test",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LyraServer Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "LyraServer Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LyraServer",
+					"Win64",
+					"Shipping",
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch LyraClient (Debug)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraClient-Win64-Debug.exe",
+				"preLaunchTask": "LyraClient Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraClient (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraClient-Win64-DebugGame.exe",
+				"preLaunchTask": "LyraClient Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraClient (Development)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraClient.exe",
+				"preLaunchTask": "LyraClient Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraClient (Test)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraClient-Win64-Test.exe",
+				"preLaunchTask": "LyraClient Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraClient (Shipping)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraClient-Win64-Shipping.exe",
+				"preLaunchTask": "LyraClient Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "LyraEditor Win64 Debug Build",
+				"args": [
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject"
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "LyraEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject"
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraEditor (Development)",
+				"request": "launch",
+				"program": "E:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "LyraEditor Win64 Development Build",
+				"args": [
+					"E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject"
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraGame (Debug)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraGame-Win64-Debug.exe",
+				"preLaunchTask": "LyraGame Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraGame (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraGame-Win64-DebugGame.exe",
+				"preLaunchTask": "LyraGame Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraGame (Development)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraGame.exe",
+				"preLaunchTask": "LyraGame Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraGame (Test)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraGame-Win64-Test.exe",
+				"preLaunchTask": "LyraGame Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraGame (Shipping)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraGame-Win64-Shipping.exe",
+				"preLaunchTask": "LyraGame Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraServer (Debug)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraServer-Win64-Debug.exe",
+				"preLaunchTask": "LyraServer Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraServer (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraServer-Win64-DebugGame.exe",
+				"preLaunchTask": "LyraServer Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraServer (Development)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraServer.exe",
+				"preLaunchTask": "LyraServer Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraServer (Test)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraServer-Win64-Test.exe",
+				"preLaunchTask": "LyraServer Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch LyraServer (Shipping)",
+				"request": "launch",
+				"program": "E:\\Examples\\LyraStarterGame\\Binaries\\Win64\\LyraServer-Win64-Shipping.exe",
+				"preLaunchTask": "LyraServer Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\UnrealEngine\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\Examples\\LyraStarterGame\\LyraStarterGame.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\UnrealEngine"
+			}
+		]
+	}
+}
