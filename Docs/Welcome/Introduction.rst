@@ -44,10 +44,11 @@ Getting Started
 
 .. code-block:: text
 
-   git clone 
+   git clone --recurse-submodules -j8 init https://github.com/kiwi-lang/LyraStarterGame.git
+   cd LyraStarterGame
    uecli ubt regenerate --vscode
    code LyraStarterGame.code-workspace
 
-   Run without debugger: ctrl+shift B
-   Run with    debugger: F5
+   # Run without debugger: ctrl+shift B
+   # Run with    debugger: F5
 
