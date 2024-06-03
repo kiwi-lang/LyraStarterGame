@@ -7,7 +7,8 @@ Summary
 Using this setup we always seamless travel between maps.
 A base setup is loaded as a client (GameMode, Character etc...)
 The requirements for a maps are defined in an "Experience" (ULyraExperienceDefinition)
-which will add gameplay features (components to actors, Widget)
+which will add gameplay features (components to actors, Widget, etc...) when needed.
+
 
 Setup Overview
 --------------
@@ -315,6 +316,7 @@ Server Flow
                * LAS_ShooterGame_StandardHUD
                   * Add Widgets
                      * Layout: UI.Layer.Game => W_ShooterHUDLayout
+                        * W_ShooterHUDLayout > ULyraHUDLayout > ULyraActivatableWidget > UCommonActivatableWidget > UCommonUserWidget > UUserWidget
                      * Widgets
                         * HUD.Slot.EliminationFeed => W_EliminationFeed
                            * Listen for GameplayMessage: Lyra.AddNotification.KillFeed
@@ -358,6 +360,37 @@ Server Flow
                      * B_PickRandomCharacter > ULyraControllerComponent_CharacterParts > UControllerComponent
                * Add Widget
                   * HUD.Slot.TeamScore => W_ScoreWidget_Elimination
+         * OnExperienceLoaded_HighPriority.Broadcast(CurrentExperience);
+         * OnExperienceLoaded.Broadcast(CurrentExperience);
+         * OnExperienceLoaded_LowPriority.Broadcast(CurrentExperience);
+
+
+Final State
+-----------
+
+* GameState: LyraGameState
+
+* LocalPlayer
+
+* Player Controller
+
+* CharacterL B_Hero_ShooterMannequin
+   * Components
+      * Camera Component
+      * Character Movement
+      * Pawn Ext Component
+      * Health Component
+      * Lyra Hero
+      * AIPerception StimuliSource
+      * LyraContextEffect
+      * PawnCosmeticsComponent
+   * Attachments:
+      * ALyraTaggedActor
+      * B_Pistol > B_Weapon > Actor
+
+* Player State
+
+
 
 .. comment::
 
@@ -369,3 +402,10 @@ Server Flow
       * Actors that persist
          * GameMode (server)
          * PlayerController with PlayerState (server)
+
+
+
+Cosmetics
+---------
+
+* B_MannesingPawnCosmectics > ULyraPawnComponent_CharacterParts
